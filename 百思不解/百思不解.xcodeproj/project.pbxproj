@@ -16,10 +16,14 @@
 		064CAEB91E349FF100EDE5EA /* XMGTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAEB81E349FF100EDE5EA /* XMGTabBarViewController.m */; };
 		064CAEC01E34A1A200EDE5EA /* XMGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAEBF1E34A1A200EDE5EA /* XMGEssenceViewController.m */; };
 		064CAEC31E34AAFC00EDE5EA /* XMGNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAEC21E34AAFC00EDE5EA /* XMGNavViewController.m */; };
+		069B5E0E1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B5E0D1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.m */; };
+		069B5E111E34F48700D16EAB /* UIView+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B5E101E34F48700D16EAB /* UIView+extension.m */; };
+		069B5E151E34F96E00D16EAB /* XMGTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B5E141E34F96E00D16EAB /* XMGTopicViewController.m */; };
 		B868C5E940C5D17E5196D2EB /* libPods-百思不解.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52985D5376711ECEC5982FF0 /* libPods-百思不解.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0608DA231E34EB2500143029 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		064CAE9A1E349DB800EDE5EA /* 百思不解.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不解.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		064CAE9E1E349DB800EDE5EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		064CAEA01E349DB800EDE5EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -36,6 +40,12 @@
 		064CAEBF1E34A1A200EDE5EA /* XMGEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGEssenceViewController.m; sourceTree = "<group>"; };
 		064CAEC11E34AAFC00EDE5EA /* XMGNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGNavViewController.h; sourceTree = "<group>"; };
 		064CAEC21E34AAFC00EDE5EA /* XMGNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGNavViewController.m; sourceTree = "<group>"; };
+		069B5E0C1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XMGExtensions.h"; sourceTree = "<group>"; };
+		069B5E0D1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XMGExtensions.m"; sourceTree = "<group>"; };
+		069B5E0F1E34F48700D16EAB /* UIView+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+extension.h"; sourceTree = "<group>"; };
+		069B5E101E34F48700D16EAB /* UIView+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+extension.m"; sourceTree = "<group>"; };
+		069B5E131E34F96E00D16EAB /* XMGTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopicViewController.h; sourceTree = "<group>"; };
+		069B5E141E34F96E00D16EAB /* XMGTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopicViewController.m; sourceTree = "<group>"; };
 		52985D5376711ECEC5982FF0 /* libPods-百思不解.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不解.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9490583C06CDCB43848393DF /* Pods-百思不解.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不解.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不解/Pods-百思不解.release.xcconfig"; sourceTree = "<group>"; };
 		D8DF694279F81B9FC73E55F4 /* Pods-百思不解.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不解.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不解/Pods-百思不解.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,10 +107,12 @@
 			isa = PBXGroup;
 			children = (
 				064CAEB61E349FCF00EDE5EA /* controller */,
+				069B5E0B1E34F04E00D16EAB /* category */,
 				064CAEA01E349DB800EDE5EA /* AppDelegate.h */,
 				064CAEA11E349DB800EDE5EA /* AppDelegate.m */,
 				064CAEA31E349DB800EDE5EA /* ViewController.h */,
 				064CAEA41E349DB800EDE5EA /* ViewController.m */,
+				0608DA231E34EB2500143029 /* PrefixHeader.pch */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -139,6 +151,8 @@
 			children = (
 				064CAEBE1E34A1A200EDE5EA /* XMGEssenceViewController.h */,
 				064CAEBF1E34A1A200EDE5EA /* XMGEssenceViewController.m */,
+				069B5E131E34F96E00D16EAB /* XMGTopicViewController.h */,
+				069B5E141E34F96E00D16EAB /* XMGTopicViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -155,6 +169,17 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		069B5E0B1E34F04E00D16EAB /* category */ = {
+			isa = PBXGroup;
+			children = (
+				069B5E0C1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.h */,
+				069B5E0D1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.m */,
+				069B5E0F1E34F48700D16EAB /* UIView+extension.h */,
+				069B5E101E34F48700D16EAB /* UIView+extension.m */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 		AC941004BA4C755494AFF880 /* Frameworks */ = {
@@ -297,11 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069B5E0E1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.m in Sources */,
 				064CAEA51E349DB800EDE5EA /* ViewController.m in Sources */,
 				064CAEC31E34AAFC00EDE5EA /* XMGNavViewController.m in Sources */,
 				064CAEA21E349DB800EDE5EA /* AppDelegate.m in Sources */,
 				064CAE9F1E349DB800EDE5EA /* main.m in Sources */,
 				064CAEC01E34A1A200EDE5EA /* XMGEssenceViewController.m in Sources */,
+				069B5E151E34F96E00D16EAB /* XMGTopicViewController.m in Sources */,
+				069B5E111E34F48700D16EAB /* UIView+extension.m in Sources */,
 				064CAEB91E349FF100EDE5EA /* XMGTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U6Z55XY4LH;
+				GCC_PREFIX_HEADER = "百思不解/other/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不解/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ok.com.----";
@@ -435,6 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U6Z55XY4LH;
+				GCC_PREFIX_HEADER = "百思不解/other/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不解/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ok.com.----";

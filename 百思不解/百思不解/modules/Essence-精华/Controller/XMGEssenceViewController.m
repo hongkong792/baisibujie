@@ -9,8 +9,10 @@
 //
 
 #import "XMGEssenceViewController.h"
-#define XMGGlobalBg XMGRGBColor(223, 223, 223)
-#define XMGRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#import "UIBarButtonItem+XMGExtensions.h"
+#import "XMGTopicViewController.h"
+
+
 @interface XMGEssenceViewController ()
 
 @end
@@ -19,12 +21,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//设置导航栏
+   //设置导航栏
     [self setUpNav];
+    //初始化子控制器
+    [self initChildControllers];
+    
+    //设置顶部标题拦
+    
+    
+    //底部的scrooView
+    
     
     
 }
-
+/**
+ *初始化子控制器
+ */
+ - (void)initChildControllers
+{
+    //图片
+    
+    
+    
+}
 /**
  *设置导航栏
  */
