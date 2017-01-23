@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMGConst.h"
 
 @interface XMGTopicViewController : UITableViewController
-
+@property (nonatomic,assign)XMGTopicType type;
 @end

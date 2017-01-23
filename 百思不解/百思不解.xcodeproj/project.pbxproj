@@ -16,6 +16,10 @@
 		064CAEB91E349FF100EDE5EA /* XMGTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAEB81E349FF100EDE5EA /* XMGTabBarViewController.m */; };
 		064CAEC01E34A1A200EDE5EA /* XMGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAEBF1E34A1A200EDE5EA /* XMGEssenceViewController.m */; };
 		064CAEC31E34AAFC00EDE5EA /* XMGNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAEC21E34AAFC00EDE5EA /* XMGNavViewController.m */; };
+		064CAEC61E359B8000EDE5EA /* XMGConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAEC51E359B8000EDE5EA /* XMGConst.m */; };
+		064CAECF1E35B98D00EDE5EA /* XMGTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAECD1E35B98D00EDE5EA /* XMGTopicCell.m */; };
+		064CAED01E35B98D00EDE5EA /* XMGTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 064CAECE1E35B98D00EDE5EA /* XMGTopicCell.xib */; };
+		064CAED31E35F06700EDE5EA /* XMGTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAED21E35F06700EDE5EA /* XMGTopic.m */; };
 		069B5E0E1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B5E0D1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.m */; };
 		069B5E111E34F48700D16EAB /* UIView+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B5E101E34F48700D16EAB /* UIView+extension.m */; };
 		069B5E151E34F96E00D16EAB /* XMGTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B5E141E34F96E00D16EAB /* XMGTopicViewController.m */; };
@@ -40,6 +44,13 @@
 		064CAEBF1E34A1A200EDE5EA /* XMGEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGEssenceViewController.m; sourceTree = "<group>"; };
 		064CAEC11E34AAFC00EDE5EA /* XMGNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGNavViewController.h; sourceTree = "<group>"; };
 		064CAEC21E34AAFC00EDE5EA /* XMGNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGNavViewController.m; sourceTree = "<group>"; };
+		064CAEC41E359B8000EDE5EA /* XMGConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGConst.h; sourceTree = "<group>"; };
+		064CAEC51E359B8000EDE5EA /* XMGConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGConst.m; sourceTree = "<group>"; };
+		064CAECC1E35B98D00EDE5EA /* XMGTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopicCell.h; sourceTree = "<group>"; };
+		064CAECD1E35B98D00EDE5EA /* XMGTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopicCell.m; sourceTree = "<group>"; };
+		064CAECE1E35B98D00EDE5EA /* XMGTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTopicCell.xib; sourceTree = "<group>"; };
+		064CAED11E35F06700EDE5EA /* XMGTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopic.h; sourceTree = "<group>"; };
+		064CAED21E35F06700EDE5EA /* XMGTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopic.m; sourceTree = "<group>"; };
 		069B5E0C1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XMGExtensions.h"; sourceTree = "<group>"; };
 		069B5E0D1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XMGExtensions.m"; sourceTree = "<group>"; };
 		069B5E0F1E34F48700D16EAB /* UIView+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+extension.h"; sourceTree = "<group>"; };
@@ -113,6 +124,8 @@
 				064CAEA31E349DB800EDE5EA /* ViewController.h */,
 				064CAEA41E349DB800EDE5EA /* ViewController.m */,
 				0608DA231E34EB2500143029 /* PrefixHeader.pch */,
+				064CAEC41E359B8000EDE5EA /* XMGConst.h */,
+				064CAEC51E359B8000EDE5EA /* XMGConst.m */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -160,6 +173,8 @@
 		064CAEBC1E34A18500EDE5EA /* model */ = {
 			isa = PBXGroup;
 			children = (
+				064CAED11E35F06700EDE5EA /* XMGTopic.h */,
+				064CAED21E35F06700EDE5EA /* XMGTopic.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -167,6 +182,9 @@
 		064CAEBD1E34A18500EDE5EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				064CAECC1E35B98D00EDE5EA /* XMGTopicCell.h */,
+				064CAECD1E35B98D00EDE5EA /* XMGTopicCell.m */,
+				064CAECE1E35B98D00EDE5EA /* XMGTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064CAED01E35B98D00EDE5EA /* XMGTopicCell.xib in Resources */,
 				064CAEAD1E349DB800EDE5EA /* LaunchScreen.storyboard in Resources */,
 				064CAEAA1E349DB800EDE5EA /* Assets.xcassets in Resources */,
 				064CAEA81E349DB800EDE5EA /* Main.storyboard in Resources */,
@@ -322,12 +341,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064CAED31E35F06700EDE5EA /* XMGTopic.m in Sources */,
 				069B5E0E1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.m in Sources */,
 				064CAEA51E349DB800EDE5EA /* ViewController.m in Sources */,
 				064CAEC31E34AAFC00EDE5EA /* XMGNavViewController.m in Sources */,
 				064CAEA21E349DB800EDE5EA /* AppDelegate.m in Sources */,
+				064CAECF1E35B98D00EDE5EA /* XMGTopicCell.m in Sources */,
 				064CAE9F1E349DB800EDE5EA /* main.m in Sources */,
 				064CAEC01E34A1A200EDE5EA /* XMGEssenceViewController.m in Sources */,
+				064CAEC61E359B8000EDE5EA /* XMGConst.m in Sources */,
 				069B5E151E34F96E00D16EAB /* XMGTopicViewController.m in Sources */,
 				069B5E111E34F48700D16EAB /* UIView+extension.m in Sources */,
 				064CAEB91E349FF100EDE5EA /* XMGTabBarViewController.m in Sources */,

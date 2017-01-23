@@ -8,92 +8,85 @@
 //
 
 #import "XMGTopicViewController.h"
-
+#import "UIView+extension.h"
+#import "XMGTopicCell.h"
+#import "XMGTopic.h"
+#import <MJExtension.h>
+#import <MJRefresh.h>
 @interface XMGTopicViewController ()
 
+/**帖子数据*/
+@property (nonatomic,strong)NSMutableArray *topics;
+/**当前页码*/
+@property (nonatomic,assign)NSInteger page;
+/**上一次请求的参数*/
+@property (nonatomic,strong)NSDictionary *params;
 @end
 
 @implementation XMGTopicViewController
+static NSString * const topicCell = @"topicCell";
+- (NSMutableArray *)topics
+{
+    if (!_topics) {
+        _topics = [NSMutableArray array];
+    }
+    return _topics;
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+//初始化表格
+    [self setupTableView];
+    //添加刷新控价
+    [self setupRefresh];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+/**
+ *初始化表格
+ */
+- (void)setupTableView
+{
+    self.tableView.backgroundColor = [UIColor clearColor];
+    CGFloat buttom = self.tabBarController.tabBar.height;
+    self.tableView.contentInset = UIEdgeInsetsMake(XMGTitleHeight+XMGStatusHeight, 0, buttom, 0);
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    //右侧的
+    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XMGTopicCell class]) bundle:nil] forCellReuseIdentifier:topicCell];
     
-    // Configure the cell...
+}
+
+#pragma mark UITableViewDelegate, UITableViewDataSource
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    XMGTopic * topic = self.topics[indexPath.row];
+    return topic.height;
     
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    XMGTopicCell * cell = [tableView dequeueReusableCellWithIdentifier:topicCell];
+    cell.topic = self.topics[indexPath.row];
     return cell;
+    
 }
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (self.topics.count ==0) {
+        self.tableView.footer.hidden = YES;
+    }else{
+         self.tableView.footer.hidden = NO;
+    }
+    return self.topics.count;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
