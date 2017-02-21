@@ -22,3 +22,4 @@ typedef NS_ENUM(NSUInteger,XMGTopicType){
 
 CGFloat const  XMGStatusHeight =64;
 CGFloat const  XMGTitleHeight = 35;
+CGFloat const XMGTopicCellMargin = 10;

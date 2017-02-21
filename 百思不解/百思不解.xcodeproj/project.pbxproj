@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0607253C1E4B52D800ED3538 /* NSDate+extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0607253B1E4B52D800ED3538 /* NSDate+extensions.m */; };
 		064CAE9F1E349DB800EDE5EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAE9E1E349DB800EDE5EA /* main.m */; };
 		064CAEA21E349DB800EDE5EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAEA11E349DB800EDE5EA /* AppDelegate.m */; };
 		064CAEA51E349DB800EDE5EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAEA41E349DB800EDE5EA /* ViewController.m */; };
@@ -20,6 +21,8 @@
 		064CAECF1E35B98D00EDE5EA /* XMGTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAECD1E35B98D00EDE5EA /* XMGTopicCell.m */; };
 		064CAED01E35B98D00EDE5EA /* XMGTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 064CAECE1E35B98D00EDE5EA /* XMGTopicCell.xib */; };
 		064CAED31E35F06700EDE5EA /* XMGTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 064CAED21E35F06700EDE5EA /* XMGTopic.m */; };
+		067B18301E5C89FD00351489 /* XMGTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 067B182F1E5C89FD00351489 /* XMGTopicPictureView.m */; };
+		067B18321E5C8BBE00351489 /* XMGTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 067B18311E5C8BBE00351489 /* XMGTopicPictureView.xib */; };
 		069B5E0E1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B5E0D1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.m */; };
 		069B5E111E34F48700D16EAB /* UIView+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B5E101E34F48700D16EAB /* UIView+extension.m */; };
 		069B5E151E34F96E00D16EAB /* XMGTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069B5E141E34F96E00D16EAB /* XMGTopicViewController.m */; };
@@ -27,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0607253A1E4B52D800ED3538 /* NSDate+extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+extensions.h"; sourceTree = "<group>"; };
+		0607253B1E4B52D800ED3538 /* NSDate+extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+extensions.m"; sourceTree = "<group>"; };
 		0608DA231E34EB2500143029 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		064CAE9A1E349DB800EDE5EA /* 百思不解.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不解.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		064CAE9E1E349DB800EDE5EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,6 +56,9 @@
 		064CAECE1E35B98D00EDE5EA /* XMGTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTopicCell.xib; sourceTree = "<group>"; };
 		064CAED11E35F06700EDE5EA /* XMGTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopic.h; sourceTree = "<group>"; };
 		064CAED21E35F06700EDE5EA /* XMGTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopic.m; sourceTree = "<group>"; };
+		067B182E1E5C89FD00351489 /* XMGTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopicPictureView.h; sourceTree = "<group>"; };
+		067B182F1E5C89FD00351489 /* XMGTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopicPictureView.m; sourceTree = "<group>"; };
+		067B18311E5C8BBE00351489 /* XMGTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTopicPictureView.xib; sourceTree = "<group>"; };
 		069B5E0C1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XMGExtensions.h"; sourceTree = "<group>"; };
 		069B5E0D1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XMGExtensions.m"; sourceTree = "<group>"; };
 		069B5E0F1E34F48700D16EAB /* UIView+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+extension.h"; sourceTree = "<group>"; };
@@ -185,6 +193,9 @@
 				064CAECC1E35B98D00EDE5EA /* XMGTopicCell.h */,
 				064CAECD1E35B98D00EDE5EA /* XMGTopicCell.m */,
 				064CAECE1E35B98D00EDE5EA /* XMGTopicCell.xib */,
+				067B182E1E5C89FD00351489 /* XMGTopicPictureView.h */,
+				067B182F1E5C89FD00351489 /* XMGTopicPictureView.m */,
+				067B18311E5C8BBE00351489 /* XMGTopicPictureView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +207,8 @@
 				069B5E0D1E34F07600D16EAB /* UIBarButtonItem+XMGExtensions.m */,
 				069B5E0F1E34F48700D16EAB /* UIView+extension.h */,
 				069B5E101E34F48700D16EAB /* UIView+extension.m */,
+				0607253A1E4B52D800ED3538 /* NSDate+extensions.h */,
+				0607253B1E4B52D800ED3538 /* NSDate+extensions.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -279,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				067B18321E5C8BBE00351489 /* XMGTopicPictureView.xib in Resources */,
 				064CAED01E35B98D00EDE5EA /* XMGTopicCell.xib in Resources */,
 				064CAEAD1E349DB800EDE5EA /* LaunchScreen.storyboard in Resources */,
 				064CAEAA1E349DB800EDE5EA /* Assets.xcassets in Resources */,
@@ -347,10 +361,12 @@
 				064CAEC31E34AAFC00EDE5EA /* XMGNavViewController.m in Sources */,
 				064CAEA21E349DB800EDE5EA /* AppDelegate.m in Sources */,
 				064CAECF1E35B98D00EDE5EA /* XMGTopicCell.m in Sources */,
+				067B18301E5C89FD00351489 /* XMGTopicPictureView.m in Sources */,
 				064CAE9F1E349DB800EDE5EA /* main.m in Sources */,
 				064CAEC01E34A1A200EDE5EA /* XMGEssenceViewController.m in Sources */,
 				064CAEC61E359B8000EDE5EA /* XMGConst.m in Sources */,
 				069B5E151E34F96E00D16EAB /* XMGTopicViewController.m in Sources */,
+				0607253C1E4B52D800ED3538 /* NSDate+extensions.m in Sources */,
 				069B5E111E34F48700D16EAB /* UIView+extension.m in Sources */,
 				064CAEB91E349FF100EDE5EA /* XMGTabBarViewController.m in Sources */,
 			);

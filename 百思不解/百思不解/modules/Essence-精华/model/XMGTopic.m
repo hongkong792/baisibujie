@@ -8,6 +8,7 @@
 
 #import "XMGTopic.h"
 #import <MJExtension.h>
+#import "NSDate+extensions.h"
 
 @implementation XMGTopic
 {
